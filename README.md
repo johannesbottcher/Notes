@@ -1,4 +1,4 @@
-cheatsheet
+Notes & Cheatsheets
 ==========
 
-cheatsheet about maths, physics, ...
+Note and cheatsheets about maths, physics, chemistry, ...
