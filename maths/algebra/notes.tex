@@ -7,7 +7,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathrsfs}
-\usepackage[margin=1cm]{geometry}
+\usepackage{graphics}
+\usepackage[margin=1.5cm]{geometry}
 
 \DeclareMathSizes{10}{10}{10}{10}
 
@@ -22,96 +23,315 @@
 % Arithmetic section
 % ---
 \section{Arithmetic}
-\(ab + ac = a(b+c) \) \\
-\(\frac{\frac{a}{b}}{c}\) = \(\frac{a}{bc}\) \\
-\(\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}\) \\
-\(\frac{a - b}{c - d} = \frac{b - a}{d - c}\) \\
-\(\frac{ab + ac}{a} = b + c, a\neq 0 \) \\
-\(a \frac{b}{c} = \frac{ab}{c}\) \\
-\(\frac{a}{\frac{b}{c}} = \frac{ac}{b}\) \\
-\(\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}\) \\
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}[c]{| c | c | c | c | c}
+\hline
+\(\frac{ab + ac}{a} = b + c, a\neq 0 \) & 
+\(\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}\) & 
+\(\frac{a - b}{c - d} = \frac{b - a}{d - c}\) &
 \(\frac{a + b}{c} = \frac{a}{c} + \frac{b}{c}\) \\
-\(\frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}\) \\\\
+\hline
+\(\frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}\) & 
+\(\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}\) & 
+\(a \frac{b}{c} = \frac{ab}{c}\) &
+\(ab + ac = a(b+c) \) \\
+\hline
+\end{tabular}}
+\end{center}
+
+\subsection{Common arithmetic errors}
+
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c | }
+\hline
+Error & Reason/correction/justification/example \\
+\hline
+\(\frac{2}{0} \neq 0 \) and \(\frac{2}{0} \neq 2 \) & Division by zero is undefined! \\
+\hline
+\(\frac{a}{b + c} \neq \frac{a}{b} + \frac{b}{c}\) & \(\frac{1}{2} = \frac{1}{1 + 1} \neq \frac{1}{1} + \frac{1}{1} = 2\)  \\
+\hline
+\(\frac{1}{x^2 + x^3} \neq x^{-2} + x^{-3}\) & A more complex version of the previous error.  \\
+\hline
+\(\frac{\not a + bx}{\not a} \neq 1 + bx\)  & \(\frac{a + bx}{a} = \frac{a}{a} + \frac{bx}{a} = 1 + \frac{bx}{a}\)\\
+\hline
+\(\frac{a}{\frac{b}{c}} \neq \frac{ab}{c}\) & \(\frac{a}{\frac{b}{c}} = \frac{\frac{a}{1}}{\frac{b}{c}} = \frac{a}{1} \frac{c}{b} = \frac{ac}{b}\) \\
+\hline
+\(\frac{\frac{a}{b}}{c} \neq \frac{ac}{b}\) & \(\frac{\frac{a}{b}}{c} = \frac{\frac{a}{b}}{\frac{c}{1}} = \frac{a}{b} \frac{1}{c} = \frac{a}{bc}\) \\
+\hline
+\(-a(x-1) \neq -ax - a\) & \(-a(x-1) \neq -ax + a\)  \\
+\hline
+
+
+\end{tabular}}
+\end{center}
 
 % --- 
 % Exponent section
 % ---
 \section{Exponent}
-\(a^n a^m = a^{n+m} \) \\
-\((a^n)^m = a^{nm} \) \\
-\((ab)^n = a^n b^n\) \\
-\(a^{-n} = \frac{1}{a^n}\) \\
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}[c]{| c | c | c | c | c |}
+\hline
+\(a^n a^m = a^{n+m} \) & 
+\((a^n)^m = a^{nm} \) & 
+\((ab)^n = a^n b^n\) & 
+\(a^{-n} = \frac{1}{a^n}\) & 
 \((\frac{a}{b})^{-n} = (\frac{b}{a})^{n} = \frac{b^n}{a^n} \) \\
-\(\frac{a^n}{a^m} = a^{n-m} = \frac{1}{a^{m-n}}\) \\
-\(a^0 = 1, a \neq 0 \) \\
-\((\frac{a}{b})^n = \frac{a^n}{b^n}\) \\
-\(\frac{1}{a^{-n}} = a^n\) \\
-\(a^\frac{n}{m} = (a^\frac{1}{m})^n = (a^n)^\frac{1}{m}\) \\\\
+\hline
+\(\frac{a^n}{a^m} = a^{n-m} = \frac{1}{a^{m-n}}\) & 
+\(a^0 = 1, a \neq 0 \) & 
+\((\frac{a}{b})^n = \frac{a^n}{b^n}\) & 
+\(\frac{1}{a^{-n}} = a^n\) & 
+\(a^\frac{n}{m} = (a^\frac{1}{m})^n = (a^n)^\frac{1}{m}\) \\
+\hline
+\end{tabular}}
+\end{center}
+
+\subsection{Common exponent errors}
+
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | l | }
+\hline
+Error & Reason/correction/justification/example \\
+\hline
+\(-3^2 \neq 9\) & \(-3^2 = -9\), \((-3^2) = 9\) Watch parenthesis !  \\
+\hline
+\((x^2)^3 \neq x^5\) & \((x^2)^3 = x^6\)   \\
+\hline
+\((x + a)^2 \neq x^2 + a^2\) & \((x + a)^2 = (x + a)(x + a) = x^2 + 2ax + a^2 \) \\
+\hline
+\(2(x+1)^2 \neq (2x + 2)^2 \) & \(2(x + 1)^2 = 2(x^2 + 2x + 1) = 2x^2 + 4x + 2\), \\ 
+& \((2x^2 + 2)^2 = 4x^2 +8x + 4 \) \\
+\hline
+\((2x + 2)^2 \neq 2(x + 1)^2\) & No factor out a constant if there is a power on the parenthesis! \\
+\hline
+\((x + a)^n \neq x^n + a^n\) and \(\sqrt[n]{x + a} \neq \sqrt[n]{x} + \sqrt[n]{a}\) & More general versions of previous three errors \\
+\hline
+\end{tabular}}
+\end{center}
+
 
 % --- 
 % Radicals section
 % ---
 \section{Radicals}
-\(\sqrt[n]{a^m} = a^{\frac{m}{n}}\) \\
-\(\sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}\) \\
-\(\sqrt[n]{a^n} = a, if n is odd\) \\
-\(\sqrt[n]{a^n} = |a|, if n is even\) \\
-\(\sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}\) \\
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}[c]{| c | c | c |}
+\hline
+\(\sqrt[n]{a^m} = a^{\frac{m}{n}}\) &
+\(\sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}\) &
+\(\sqrt[n]{a^n} = a, \text{if n is odd} \) \\
+\hline
+\(\sqrt[n]{a^n} = |a|, \text{if n is even} \) &
+\(\sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}\) &
 \(\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}\) \\
+\hline
+\end{tabular}}
+\end{center}
+
+\subsection{Square Root property}
+If \( x^2 = p \) then \( x = \pm \sqrt{p}\)
+
+\subsection{Common radicals errors}
+
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c | }
+\hline
+Error & Reason/correction/justification/example \\
+\hline
+\(\sqrt{x^2 + a^2} \neq x + a \) & \(5 = \sqrt{25} = \sqrt{3^2 + 4^2} \neq \sqrt{3^2} + \sqrt{4^2} = 3 + 4 = 7 \) \\
+\hline
+\(\sqrt{x + a} \neq \sqrt{x} + \sqrt{a} \) & See previous error \\
+\hline
+\(\sqrt{-x^2 + a^2} \neq -\sqrt{x^2 + a^2} \) & \(\sqrt{-x^2 + a^2} = (-x^2 + a^2)^\frac{1}{2}\) \\
+\hline
+\end{tabular}}
+\end{center}
 
 % --- 
 % Inequalities section
 % ---
 \section{Inequalities}
-If a < b then a + c < b + c and a - c < b - c \\
-If a < b and c > 0 then ac < bc and \(\frac{a}{c} < \frac{b}{c}\) \\
-If a < b and c < 0 then ac > bc and \(\frac{a}{c} > \frac{b}{c}\) \\
+If a < b then a + c < b + c and a - c < b - c \\\\
+If a < b and c > 0 then ac < bc and \(\frac{a}{c} < \frac{b}{c}\) \\\\
+If a < b and c < 0 then ac > bc and \(\frac{a}{c} > \frac{b}{c}\) \\\\
+\text{When both sides a multiplied by a negative, the inequality's side must be changed} \\
+\begin{tabular}{ccc}
+-a & < & b \\
+a & > & -b
+\end{tabular} \\
+
+\text{A constant/variable must be moved on all sides of an inequality} \\
+\begin{tabular}{ccccc}
+a & < & x + b & < & c \\
+a - b & < & x & < & c - b \\ 
+or \\
+a & < & x*b & < & c \\
+\(\frac{a}{b} \) & < & x & < & \(\frac{c}{b} \)\\
+
+\end{tabular}
 
 % --- 
 % Absolute value section
 % ---
 \section{Absolute value}
-\(\left|a\right| = a \), if \(a \ge 0\), -a if \(a < 0\) \\
-\(\left|a\right| \ge 0 \) \\
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c | c |}
+\hline
+\(\left|a\right| = a \), if \(a \ge 0\), -a if \(a < 0\) &
+\(\left|a\right| \ge 0 \) &
 \(\left|ab\right| = \left|a\right|\left|b\right| \) \\
-\(\left|a+b\right| \le \left|a\right| + \left|b\right|\) \\
-\(\left|-a\right| = \left|a\right| \) \\
+\hline
+\(\left|a+b\right| \le \left|a\right| + \left|b\right|\) &
+\(\left|-a\right| = \left|a\right| \) &
 \(\left|\frac{a}{b}\right| = \frac{\left|a\right|}{\left|b\right|} \) \\
-
+\hline
+\end{tabular}}
+\end{center}
 
 % --- 
-% Distance formula section
+% Absolute value section
 % ---
-\section{Distance formula}
-\(If P_1 = (x_1, y_1) \) and \(P_2 = (x_2, y_2)\) are two points. \\
-The distance between them is equal to \\
-\(d(P_1, P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)
+\section{Absolute value and inequalities}
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c |}
+\hline
+\(\left|p\right| = b \) & \(p = -b \) or \( p = b \) \\
+\hline
+\(\left|p\right| < b \) & \(-b < p < b \) \\
+\hline
+\(\left|p\right| > b \) & \(p < -b \) or \( p > b \) \\
+\hline
+\end{tabular}}
+\end{center}
 
 % --- 
 % Complex numbers section
 % ---
 \section{Complex numbers}
-\(i = sqrt{-1} \) \\
-\(i^1 = -1 \) \\
-\(\sqrt{-a} = i\sqrt{a}, a \ge 0 \) \\
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c |}
+\hline
+\(\sqrt{-a} = i\sqrt{a}, a \ge 0 \) &
 \((a + bi) + (c + di) = a+ c + (b + d)i\) \\
-\((a + bi) - (c + di) = a - c + (b - d)i \) \\
+\hline
+\((a + bi) - (c + di) = a - c + (b - d)i \) &
 \((a + bi)(c - di) = ac - bd + (ad + bc)i\) \\
-\((a + bi)(a - bi) = a^2 + b^2 \) \\
+\hline
+\((a + bi)(a - bi) = a^2 + b^2 \) &
 \(\left|a + bi\right| = \sqrt{a^2 + b^2} \) Complex Modulus \\
-\(\bar{(a + bi)} = a - bi \) Complex Conjugate  \\
-\(\bar{(a + bi)}(a + bi) = \left|a + bi\right|^2 \)
+\hline
+\(\bar{(a + bi)}(a + bi) = \left|a + bi\right|^2 \) &
+\(\bar{(a + bi)} = a - bi \) Complex Conjugate \\
+\hline
+\end{tabular}}
+\end{center}
 
+\subsection{Main values of \(i \)}
+\begin{tabular}{c c c}
+\(i\) & = & \(\sqrt{-1} \) \\
+\(i^2 \) & = & \(-1\) \\
+\(i^3 \) & = & \(-i\) \\
+\(i^4 \) & = & \(1\) \\
+\end{tabular}
+
+% --- 
+% Logarithms and Log properties section
+% ---
+\section{Logarithms and Log properties}
+\subsection{Definition and special Logarithms}
+\(y = log_b x\) is equivalent to \(x = b^y\) \\
+\(ln x = log_e x \) (Natural Log) \\
+\(log x = log_{10} x \) (Common Log) \\
+The domain of \(log_b x\) is \(x > 0\) 
+
+\subsection{Logarithms properties}
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{| c | c | c | c |}
+\hline
+\(log_b b = 1 \) &
+\(log_b 1 = 0 \) &
+\(log_b b^x = x \) &
+\(b^{log_b x} = x \) \\
+\hline
+\(log_b (x^r) = r * log_b x \) &
+\(log_b (xy) = log_b x + log_b y \) &
+\(log_b (\frac{x}{y}) = log_b x - log_b y\) &
+\(log_b x = \frac{log_d(x)}{log_d(b)} \) \\
+\hline
+\end{tabular}}
+\end{center}
+
+% --- 
+% Factoring and Solving section
+% ---
+\section{Factoring and Expanding}
+\begin{tabular}{l l l}
+\(x^2 - a^2 \) & = & \( (x+a)(x-a)\) \\
+\((x+a)^2 \) & = & \( x^2 + 2ax + a^2 \) \\
+\((x-a)^2 \) & = & \( x^2 - 2ax + a^2 \) \\
+\((x+a)(x+b) \) & = & \( x^2 + (a+b)x + ab \) \\
+\((x+a)^3 \) & = & \( x^3 + 3ax^2 + 3a^{2}x + a^3\) \\
+\((x-a)^3 \) & = & \( x^3 - 3ax^2 + 3a^{2}x - a^3\) \\
+\(x^3 + a^3 \) & = & \( (x+a)(x^2 - ax + a^2)\) \\
+\(x^3 - a^3 \) & = & \( (x-a)(x^2 + ax + a^2)\) \\
+\(x^{2n} - a^{2n} \) & = & \( (x^n - a^n)(x^n + a^n)\) \\
+\end{tabular}}\\
+
+% --- 
+% Quadratic formula section
+% ---
+\section{Quadratic formula}
+Find the roots of a quadratic equation : \\
+\( ax^2 + bx + c = 0; a \neq 0 \) \\
+\( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+
+% --- 
+% Completing the square section
+% ---
+\section{Completing the square}
+\begin{center}
+Solve \(2x^2 - 6x - 10 = 0 \) \\
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{l l}
+(1) Divide the coefficient of the \(x^2\) & (4) Factor the left side \\
+\multicolumn{1}{c}{\(x^2 -3x - 5\)} & \multicolumn{1}{c}{\((x - \frac{3}{2})^2 = \frac{29}{4}\)} \\
+(2) Move the constant to the other side & (5) Use square root property \\
+\multicolumn{1}{c}{\(x^2 - 3x = 5\)} & \multicolumn{1}{c}{\(x - \frac{3}{2} = \pm \sqrt{\frac{29}{4}}\)} \\
+(3) Take half the coef. of x, square it and add it to both sides & (6) Solve for x \\
+\multicolumn{1}{c}{\(x^2 - 3x + (\frac{-3}{2})^2 = 5 + (\frac{-3}{2})^2 \)} & \multicolumn{1}{c}{\(x = \frac{3}{2} \pm \frac{\sqrt{29}}{2}\)} 
+\end{tabular}}
+\end{center}
 \pagebreak
 
 \part{Functions and Graphs}
+
+% --- 
+% Distance formula section
+% ---
+\section{Distance formula}
+\(If P_1 = (x_1, y_1) \) and \(P_2 = (x_2, y_2)\) are two points. The distance between them is equal to : \\
+\begin{center}
+\(d(P_1, P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)
+\end{center}
 
 % --- 
 % Constant Function
 % ---
 \section{Constant function}
 \(y = a\) or \(f(x) = a \) \\ 
-Graph is a horizontal line passing through the point (0,a).
+Graph is a horizontal line passing through the point (0,a). \\
+Domain \(= \mathbb{R}\)
 
 \section{Linear function}
 \(f(x) = mx + b \) \\
@@ -146,58 +366,6 @@ Graph is an ellipse with center (h, k) with vertices a units right/left from the
 Graph is a hyperbola that opens left and right, has a center at (h, k), vertices a units left/right of center and asymptotes that pass through center with slope \(\pm \frac{b}{a}\) \\
 \(\frac{(y - k)^2}{b^2} - \frac{(x - h)^2}{a^2} = 1\)  \\
 Graph is a hyperbola that opens up and down, has a center at (h, k), vertices b units up/down of center and asymptotes that pass through center with slope \(\pm \frac{b}{a}\) \\
-
-
-\pagebreak
-
-\part{Common Algebraic Errors}
-\begin{tabular}{cc}
-\hline
-Error & Reason/correction/justification/example \\
-\hline
-\(\frac{2}{0} \neq 0 \) and \(\frac{2}{0} \neq 2 \) & Division bz zero is undefined! \\
-\hline
-\(-3^2 \neq 9\) & \(-3^2 = -9\), \((-3^2) = 9\) Watch parenthesis !  \\
-\hline
-\((x^2)^3 \neq x^5\) & \((x^2)^3 = x^6\)   \\
-\hline
-\(\frac{a}{b + c} \neq \frac{a}{b} + \frac{b}{c}\) & \(\frac{1}{2} = \frac{1}{1 + 1} \neq \frac{1}{1} + \frac{1}{1} = 2\)  \\
-\hline
-\(\frac{1}{x^2 + x^3} \neq x^{-2} + x^{-3}\) & A more complex version of the previous error.  \\
-\hline
-\(\frac{\not a + bx}{\not a} \neq 1 + bx\)  & \(\frac{a + bx}{a} = \frac{a}{a} + \frac{bx}{a} = 1 + \frac{bx}{a}\)\\
-\hline
-\(-a(x-1) \neq -ax - a\) & \(-a(x-1) \neq -ax + a\)  \\
-\hline
-\((x + a)^2 \neq x^2 + a^2\) & \((x + a)^2 = (x + a)(x + a) = x^2 + 2ax + a^2 \) \\
-\hline
-\(sqrt{x^2 + a^2} \neq x + a \) & \(5 = \sqrt{25} = \sqrt{3^2 + 4^2} \neq \sqrt{3^2} + \sqrt{4^2} = 3 + 4 = 7 \) \\
-\hline
-\(\sqrt{x + a} \neq \sqrt{x} + \sqrt{a} \) & See previous error \\
-\hline 
-\((x + a)^n \neq x^n + a^n\) and \(\sqrt[n]{x + a} \neq \sqrt[n]{x} + \sqrt[n]{a}\) & More general versions of previous three errors \\
-\hline
-\(2(x+1]^2 \neq (2x + 2]^2 \) & \(2(x + 1)^2 = 2(x^2 + 2x + 1) = 2x^2 + 4x + 2\), \\ 
-& \((2x^2 + 2)^2 = 4x^2 +8x + 4 \) \\
-\hline
-\((2x + 2)^2 \neq 2(x + 1)^2\) & See the previous example. You can not factor out a constant if there is a power on the parenthesis! \\
-\hline 
-\(\sqrt{-x^2 + a^2} \neq -\sqrt{x^2 + a^2} \) & \(\sqrt{-x^2 + a^2} = (-x^2 + a^2)^\frac{1}{2}\) \\
-\hline
-\(\frac{a}{\frac{b}{c}} \neq \frac{ab}{c}\) & \(\frac{a}{\frac{b}{c}} = \frac{\frac{a}{1}}{\frac{b}{c}} = \frac{a}{1} \frac{c}{b} = \frac{ac}{b}\) \\
-\hline
-\(\frac{\frac{a}{b}}{c} \neq \frac{ac}{b}\) & \(\frac{\frac{a}{b}}{c} = \frac{\frac{a}{b}}{\frac{c}{1}} = \frac{a}{b} \frac{1}{c} = \frac{a}{bc}\) \\
-\hline
-
-\end{tabular}
-
-
-
-
-
-
-
-
 
 % --- 
 % End of document
