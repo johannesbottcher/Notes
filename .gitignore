@@ -2,3 +2,5 @@
 *.pdf
 *.ps
 
+*.tex.backup
+*.aux
