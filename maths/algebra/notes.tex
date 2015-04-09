@@ -25,10 +25,29 @@
 \begin{minipage}{.45\linewidth}\centering
 }{\end{minipage}\par}
 
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
 % --- 
 % Beginning of document
 % ---
 \begin{document}
+
+Plotting can be done within LaTeX itself. Most common package
+right now is pgfplots, there are others though. PSTricks relies
+on specials of the PostScript language, so is not directly
+compatible with pdfLaTeX. 
+Other tools like metapost or Asymptote work as well, but the user
+community is smaller. 
+\begin{tikzpicture}
+	\begin{axis}[width=.6\textwidth]
+		\addplot [mark=none] { \x*\x };
+	\end{axis}
+\end{tikzpicture}
+
+
+
 
 \begin{descrFunction}{graph_abs_x}
 $\left|x\right|$\\
