@@ -12,6 +12,7 @@
 \usepackage{graphbox}
 \usepackage{pbox}
 \usepackage{longtable}
+\usepackage{nicefrac}
 \usepackage[margin=1.5cm]{geometry}
 
 \DeclareMathSizes{10}{10}{10}{10}
@@ -20,7 +21,8 @@
 % Beginning of document
 % ---
 \begin{document}
-{\setlength{\parindent}{0pt}
+%{%<- was never closed
+	\setlength{\parindent}{0pt}
 \part{Basic Properties \& Facts}
 
 % --- 
@@ -36,7 +38,7 @@ $\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}$ &
 $\frac{a - b}{c - d} = \frac{b - a}{d - c}$ &
 $\frac{a + b}{c} = \frac{a}{c} + \frac{b}{c}$ \\
 \hline
-$\frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}$ & 
+$\nicefrac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}$ & 
 $\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}$ & 
 $a \frac{b}{c} = \frac{ab}{c}$ &
 $ab + ac = a(b+c) $ \\
@@ -254,25 +256,25 @@ i^4 &= 1
 % ---
 \section{Logarithms and Log properties}
 \subsection{Definition and special Logarithms}
-$y = log_b x$ is equivalent to $x = b^y$ \\
-$ln x = log_e x $ (Natural Log) \\
-$log x = log_{10} x $ (Common Log) \\
-The domain of $log_b x$ is $x > 0$ 
+$y = \log_b x$ is equivalent to $x = b^y$ \\
+$ln x = \log_e x $ (Natural Log) \\
+$\log x = \log_{10} x $ (Common Log) \\
+The domain of $\log_b x$ is $x > 0$ 
 
 \subsection{Logarithms properties}
 \begin{center}
 {\renewcommand{\arraystretch}{2}
 \begin{tabular}{| c | c | c | c |}
 \hline
-$log_b b = 1 $ &
-$log_b 1 = 0 $ &
-$log_b b^x = x $ &
-$b^{log_b x} = x $ \\
+$\log_b b = 1 $ &
+$\log_b 1 = 0 $ &
+$\log_b b^x = x $ &
+$b^{\log_b x} = x $ \\
 \hline
-$log_b (x^r) = r * log_b x $ &
-$log_b (xy) = log_b x + log_b y $ &
-$log_b (\frac{x}{y}) = log_b x - log_b y$ &
-$log_b x = \frac{log_d(x)}{log_d(b)} $ \\
+$\log_b (x^r) = r \cdot \log_b x $ &
+$\log_b (xy) = \log_b x + \log_b y $ &
+$\log_b (\frac{x}{y}) = \log_b x - \log_b y$ &
+$\log_b x = \frac{\log_d(x)}{\log_d(b)} $ \\
 \hline
 \end{tabular}}
 \end{center}
@@ -323,11 +325,11 @@ x^2 - 3x = 5
 \end{align*}
 (3) Take half the coef. of x, square it and add it to both sides \\
 \begin{align*}
-x^2 - 3x + (\frac{-3}{2})^2 = 5 + (\frac{-3}{2})^2
+x^2 - 3x + \bigg(\frac{-3}{2}\Big)^2 = 5 + \left(\frac{-3}{2}\right)^2
 \end{align*}
 (4) Factor the left side \\
 \begin{align*}
-(x - \frac{3}{2})^2 = \frac{29}{4}
+\bigg(x - \frac{3}{2}\bigg)^2 = \frac{29}{4}
 \end{align*}
 (5) Use square root property \\
 \begin{align*}
@@ -375,7 +377,7 @@ Domain $= \mathbb{R}$; Range = $\{f \in \mathbb{R} \colon f = a\} $
 {
   $f(x) = mx + b $ \\
   Graph is a line with point (0,b) \\
-  Slope m.
+  Slope $m$.%Needs to be a variable here as well
   Example : $f(x) = 5x - 2 $ \\
 } \\
 \hline
@@ -385,10 +387,10 @@ Domain $= \mathbb{R}$; Range = $\{f \in \mathbb{R} \colon f = a\} $
 
 Slope : slope of the line containing the two points $(x_1, y_1)$ and $(x_2, y_2)$ : \\
 \begin{align*}
-\frac{y_2 - y_1}{x_2 - x_1} = \frac{rise}{run} \\
+	\frac{y_2 - y_1}{x_2 - x_1} = \frac{\text{rise}}{\text{run}} \\%%%JB words are text
 \end{align*}
 
-Slope - intercept form : the equation of the line with slope m and y-intercept (0, b) is : \\
+Slope - intercept form : the equation of the line with slope $m$ and $y$-intercept $(0, b)$ is : \\%also math
 \begin{align*}
 y = mx + b 
 \end{align*}
