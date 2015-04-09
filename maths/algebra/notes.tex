@@ -9,18 +9,44 @@
 \usepackage{mathrsfs}
 \usepackage{float}
 \usepackage[section]{placeins}
-\usepackage{graphbox}
-\usepackage{pbox}
+%\usepackage{graphbox}
+%\usepackage{pbox}
+\usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{nicefrac}
 \usepackage[margin=1.5cm]{geometry}
 
 \DeclareMathSizes{10}{10}{10}{10}
 
+
+
+\newenvironment{descrFunction}[2][.6]{\par\addvspace{\medskipamount}\noindent\rule{\linewidth}{.4pt}\par%
+\begin{minipage}{0.45\linewidth}\centering\includegraphics[width=#1\linewidth]{#2}\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}\centering
+}{\end{minipage}\par}
+
 % --- 
 % Beginning of document
 % ---
 \begin{document}
+
+\begin{descrFunction}{graph_abs_x}
+$\left|x\right|$\\
+  Domain : $\mathbb{R}$ \\
+  Range : $y \in \mathbb{R} : y \ge 0$ \\
+  Root at x = 0
+\end{descrFunction}
+
+\begin{descrFunction}[1]{graph_1_over_x}
+$\frac{1}{x}$\\
+  Domain : $x \in \mathbb{R} : x \ne 0$ \\
+  Range : $y \in \mathbb{R} : y \ne 0$ \\
+  Root : none\\
+  Parity : odd
+\end{descrFunction}
+
+\end{document}
+
 %{%<- was never closed
 	\setlength{\parindent}{0pt}
 \part{Basic Properties \& Facts}
